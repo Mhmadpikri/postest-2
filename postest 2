@@ -1,0 +1,34 @@
+SOAL no.1
+
+#program konversi suhu
+
+#pilihan menu
+print()
+print("--program konversi suhu--")
+print("1. Fahrenheit \t=> Celcius")
+print("2. Kelvin \t=> Celcius")
+print("3. Reamur \t=> Celcius")
+print()
+
+#pilihan yang menjalankan program
+pilihan = input("pilihlah menu diatas: ")
+
+#kondisi
+if pilihan == "1":
+    Formawal = "F"
+    Formakhir = "C"
+    Nilawal  = int(input("Masukkan nilai Fahrenheit: "))  
+    Nilakhir = (Nilawal - 32) * 5/9
+elif pilihan == "2":
+    Formawal = "K"
+    Formakhir = "C"
+    Nilawal  = int(input("Masukkan nilai Kelvin: "))  
+    Nilakhir = Nilawal - 273.15
+elif pilihan == "3":
+    Formawal = "R"
+    Formakhir = "C"
+    Nilawal  = int(input("Masukkan nilai Reamur: "))  
+    Nilakhir = Nilawal * 5/4
+
+#HASIL
+print(str(Nilawal) + Formawal +"=" + str(Nilakhir) + Formakhir)
