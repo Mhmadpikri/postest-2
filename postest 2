@@ -32,3 +32,57 @@ elif pilihan == "3":
 
 #HASIL
 print(str(Nilawal) + Formawal +"=" + str(Nilakhir) + Formakhir)
+
+
+POSTES DATA MAHASISWA
+
+# DATA MAHASISWA
+
+def menu() :
+
+    print ("----------Menu----------")
+    print ("[1] Masukkan Data")
+    print ("[0] Exit")
+
+def data() :
+
+    nama = str(input("Nama : "))
+    nim = int(input("NIM : "))
+    alamat = str(input("Fakultas : "))
+    semester = str(input("Program Studi : "))
+    ip = float(input("Indeks Prestasi : "))
+    print ()
+    print ("Berikut Data Mahasiswa Anda")
+    print ()
+    data_mahasiswa = [nama , nim, alamat, semester, ip]
+    print ("Nama : ", (data_mahasiswa[0]))
+    print ("NIM: ", (data_mahasiswa[1]))
+    print ("Fakultas : ", (data_mahasiswa[2]))
+    print ("Program Studi : ", (data_mahasiswa[3]))
+    print ("Indeks Prestasi Komulatif : ", (data_mahasiswa[4]))
+
+
+# Program
+
+menu ()
+
+pilih = int(input("Masukkan Menu : "))
+
+while pilih != 0:
+    if pilih == 1:
+        data()
+    else: 
+        print("Salah Input")
+
+    print()
+    print ("Ingin Mendata lagi ? (y/n) : ")
+    back = input("Pilih : ")
+    if back == ("y") :
+        print()
+        menu()
+        pilih = int(input("Masukkan Menu : "))
+    else :
+        print ("end")
+        exit()
+
+print("Terima Kasih")
